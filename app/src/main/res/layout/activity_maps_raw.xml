@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.styledmap.MapsActivityRaw"
+    android:background="@drawable/gradient"
+    >
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/udacitylogowhitestacked"
+        android:layout_alignParentTop="true"
+        android:paddingTop="40dp"
+        android:paddingBottom="20dp"
+        />
+    <Button
+        android:id="@+id/learnbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:fontFamily="sans-serif"
+        android:textSize="25sp"
+        android:textColor="#03a1bb"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonwhite"
+        />
+
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="650-555-5555"
+        android:fontFamily="sans-serif"
+        android:textSize="17sp"
+        android:textColor="#ffffff"
+        android:layout_below="@id/learnbutton"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/snailmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2465 Latham St Mountain View, CA 94043"
+        android:fontFamily="sans-serif"
+        android:textSize="17sp"
+        android:textColor="#ffffff"
+        android:layout_below="@id/phoneNumber"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        map:cameraZoom="10"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
