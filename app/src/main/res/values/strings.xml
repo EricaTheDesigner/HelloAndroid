@@ -1,4 +1,9 @@
 <resources>
 <string name="app_name">Styled Map</string>
 <string name="title_activity_maps">Styled Map</string>
+    <string name="phoneNumber">650&#8211;555&#8211;5555</string>
+    <string name="address">2465 Latham St Mountain View, CA 94043</string>
+    <string name="website">www.udacity.com</string>
+    <string name="contactButton">Contact Us</string>
+    <string name="udacitylogo">Udacity Logo</string>
 </resources>

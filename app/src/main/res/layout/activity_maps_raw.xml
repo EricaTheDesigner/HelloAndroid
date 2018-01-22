@@ -15,12 +15,14 @@
         android:layout_alignParentTop="true"
         android:paddingTop="40dp"
         android:paddingBottom="20dp"
+        android:contentDescription="@string/udacitylogo"
         />
+
     <Button
         android:id="@+id/learnbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Contact Us"
+        android:text="@string/contactButton"
         android:fontFamily="sans-serif"
         android:textSize="25sp"
         android:textColor="#03a1bb"
@@ -38,7 +40,7 @@
         android:id="@+id/phoneNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="650-555-5555"
+        android:text="@string/phoneNumber"
         android:fontFamily="sans-serif"
         android:textSize="17sp"
         android:textColor="#ffffff"
@@ -47,15 +49,31 @@
         android:paddingTop="30dp"
         />
 
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/website"
+        android:fontFamily="sans-serif"
+        android:textSize="17sp"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:layout_below="@id/phoneNumber"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:autoLink="web"
+        />
+
     <TextView
         android:id="@+id/snailmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2465 Latham St Mountain View, CA 94043"
+        android:text="@string/address"
         android:fontFamily="sans-serif"
         android:textSize="17sp"
         android:textColor="#ffffff"
-        android:layout_below="@id/phoneNumber"
+        android:layout_below="@id/website"
         android:layout_centerHorizontal="true"
         android:padding="10dp"
         />
