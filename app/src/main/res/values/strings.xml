@@ -6,4 +6,5 @@
     <string name="website">www.udacity.com</string>
     <string name="contactButton">Contact Us</string>
     <string name="udacitylogo">Udacity Logo</string>
+    <string name="fontFamily">sans-serif</string>
 </resources>

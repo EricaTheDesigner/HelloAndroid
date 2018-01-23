@@ -10,11 +10,11 @@
     <ImageView
         android:id="@+id/logo"
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_height="@dimen/logoHeight"
         android:src="@drawable/udacitylogowhitestacked"
         android:layout_alignParentTop="true"
-        android:paddingTop="40dp"
-        android:paddingBottom="20dp"
+        android:paddingTop="@dimen/logoTopPadding"
+        android:paddingBottom="@dimen/paddingBottom"
         android:contentDescription="@string/udacitylogo"
         />
 
@@ -23,15 +23,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/contactButton"
-        android:fontFamily="sans-serif"
-        android:textSize="25sp"
-        android:textColor="#03a1bb"
+        android:fontFamily="@string/fontFamily"
+        android:textSize="@dimen/buttonTextSize"
+        android:textColor="@color/buttonText"
         android:layout_below="@id/logo"
         android:layout_centerHorizontal="true"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:layout_marginBottom="0dp"
-        android:layout_marginTop="50dp"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight"
+        android:layout_marginTop="@dimen/marginTop"
         android:background="@drawable/buttonwhite"
         />
 
@@ -41,12 +40,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/phoneNumber"
-        android:fontFamily="sans-serif"
-        android:textSize="17sp"
-        android:textColor="#ffffff"
+        android:fontFamily="@string/fontFamily"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
         android:layout_below="@id/learnbutton"
         android:layout_centerHorizontal="true"
-        android:paddingTop="30dp"
+        android:paddingTop="@dimen/paddingTop"
+        android:autoLink="phone"
         />
 
 
@@ -57,11 +57,11 @@
         android:text="@string/website"
         android:fontFamily="sans-serif"
         android:textSize="17sp"
-        android:textColor="#ffffff"
-        android:textColorLink="#ffffff"
+        android:textColor="@color/textColor"
+        android:textColorLink="@color/linkColor"
         android:layout_below="@id/phoneNumber"
         android:layout_centerHorizontal="true"
-        android:paddingTop="10dp"
+        android:paddingTop="@dimen/websitepaddingTop"
         android:autoLink="web"
         />
 
@@ -75,7 +75,7 @@
         android:textColor="#ffffff"
         android:layout_below="@id/website"
         android:layout_centerHorizontal="true"
-        android:padding="10dp"
+        android:padding="@dimen/padding"
         />
 
     <fragment
@@ -83,9 +83,10 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         xmlns:map="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="@dimen/mapHeight"
         map:cameraZoom="10"
         android:layout_alignParentBottom="true"
+        android:autoLink="web"
         />
 
 </RelativeLayout>

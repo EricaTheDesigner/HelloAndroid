@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <dimen name="paddingLeft">20dp</dimen>
+    <dimen name="paddingRight">20dp</dimen>
+    <dimen name="marginTop">50dp</dimen>
+    <dimen name="buttonTextSize">25sp</dimen>
+    <dimen name="paddingTop">30dp</dimen>
+    <dimen name="textSize">17sp</dimen>
+    <dimen name="websitepaddingTop">10dp</dimen>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="mapHeight">150dp</dimen>
+    <dimen name="paddingBottom">20dp</dimen>
+    <dimen name="logoTopPadding">40dp</dimen>
+    <dimen name="logoHeight">200dp</dimen>
+</resources>
